@@ -34,5 +34,17 @@ zip.extractAllTo("/tmp/safe");
 by visiting the /tmp directory we will see evil.txt file created and existed into the /tmp/ directory which caused by the vulnerability and good.txt exists into the /tmp/safe directory as the code normally extract to this safe directory 
 ![alt text](https://raw.githubusercontent.com/GPUkiller/ZipSlipNodeJS/master/3.png)
 
-## Proof of Concept Video :
+### Proof of Concept Video :
 https://www.youtube.com/watch?v=doLxZVcUCxs&feature=youtu.be
+
+### IMPACT
+
+An Attacker can write files into the system which may lead to Remote Code Execution RCE
+
+### Fix and Resolution 
+Upgrade to the latest adm-zip module starting from 0.4.9 is currently fixed
+
+### Detailed Vulnerability Cause 
+The module code weren't checking if the final target filename starts with the target folder.
+As shown on the following URL https://github.com/cthackers/adm-zip/pull/212/files
+a fix has been applied by adding some checks and to check if the final target filename starts with the target folder.

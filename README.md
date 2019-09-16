@@ -33,3 +33,6 @@ zip.extractAllTo("/tmp/safe");
 4) After running the index.js that contains the upper code ```node index.js```
 by visiting the /tmp directory we will see evil.txt file created and existed into the /tmp/ directory which caused by the vulnerability and good.txt exists into the /tmp/safe directory as the code normally extract to this safe directory 
 ![alt text](https://raw.githubusercontent.com/GPUkiller/ZipSlipNodeJS/master/3.png)
+
+## Proof of Concept Video :
+https://www.youtube.com/watch?v=doLxZVcUCxs&feature=youtu.be

@@ -16,4 +16,4 @@ adm-zip npm library before 0.4.9 is vulnerable to directory traversal, allowing 
 
 ### Reproduction Steps 
 1) After Installing NodeJS and NPM followed by adm-zip 0.4.7.
-2) ![alt text] (https://drive.google.com/file/d/1r3oGEKYyjmBXY1IQqM-xlt7auNSjGlCr/view?usp=sharing)
+2) ![alt text](https://raw.githubusercontent.com/GPUkiller/ZipSlipNodeJS/master/1.png)

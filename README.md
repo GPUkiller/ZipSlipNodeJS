@@ -23,3 +23,10 @@ adm-zip npm library before 0.4.9 is vulnerable to directory traversal, allowing 
 https://github.com/GPUkiller/ZipSlipNodeJS/blob/master/zip-slip.zip
 
 ![alt text](https://raw.githubusercontent.com/GPUkiller/ZipSlipNodeJS/master/2.png)
+
+3) NodeJS Code :
+```
+var AdmZip = require('adm-zip');
+var zip = new AdmZip("./zip-slip.zip");
+zip.extractAllTo("/tmp/safe"); 
+```
